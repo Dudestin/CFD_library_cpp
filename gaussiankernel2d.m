@@ -1,4 +1,4 @@
-function [w,dw,ddw] = gaussiankernel2d(q)
+function [w,dw,ddw] = gaussiankernel2d(q,h)
 %   return between 0 and 1
     absq = abs(q);
     w = (1/(pi.*h.^2)).*exp(-absq.^2);

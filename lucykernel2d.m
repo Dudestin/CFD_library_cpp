@@ -1,4 +1,4 @@
-function [m,dm,ddm] = lucy(q)
+function [m,dm,ddm] = lucykernel2d(q,h)
 %   return between 0 and 1
     absq = abs(q);
     conditions = (absq <= 1) & (absq >= 0);
